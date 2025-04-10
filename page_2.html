@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="page_2.css">
+
+</head>
+
+<body>
+  <header>
+    <h1 style="color:white;">Healthcare Subpoints</h1>
+    <div>
+      <a href="\page_7.html" class="ma"><button><b>Contact Us</b></button></button></a>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="\page_3.html"><button style="background-color: palevioletred">Preventive
+              Care</button></a></li>
+        <li><a href="\page_4.html"><button style="background-color: palevioletred">Curative
+              care</button></a></li>
+        <li><a href="\page_5.html"><button style="background-color: palevioletred">Rehabilitative
+              care</button></a></li>
+        <li><a href="\page_6.html"><button style="background-color: palevioletred"> Palliative
+              care</button> </a></li>
+      </ul>
+
+    </nav>
+    <a id="nag" href="\page0_.html"><button> Log Out</button></a>
+
+  </header>
+
+
+  <section id="preventive" action="\page_3.html">
+    <a href="\page_3.html">
+      <h2>Preventive Care</h2>
+    </a>
+    <p>Preventive healthcare focuses on maintaining wellness and preventing illness through regular check-ups,
+      screenings, and immunizations.</p>
+    <ul>
+      <li>Vaccinations</li>
+      <li>Health Screenings</li>
+      <li>Nutrition Counseling</li>
+    </ul>
+  </section>
+
+  <section id="curative">
+    <a href="\page_4.html">
+      <h2>Curative Care</h2>
+    </a>
+    <p>Curative care involves the treatment of diseases and medical conditions to restore health through medications,
+      surgeries, and therapies.</p>
+    <ul>
+      <li>Medication Management</li>
+      <li>Surgical Procedures</li>
+      <li>Specialist Consultations</li>
+    </ul>
+  </section>
+
+  <section id="Rehabilitative">
+    <a href="\page_5.html">
+      <h2>Rehabilitative Care</h2>
+    </a>
+    <p>Rehabilitation helps patients recover from illness, injury, or surgery through physical, occupational, and speech
+      therapy.</p>
+    <ul>
+      <li>Physical Therapy</li>
+      <li>Occupational Therapy</li>
+      <li>Speech Therapy</li>
+    </ul>
+  </section>
+
+  <section id="palliative">
+    <a href="page_6.html">
+      <h2>Palliative Care</h2>
+    </a>
+    <p>Palliative care aims to improve the quality of life for patients with serious illnesses by managing pain and
+      providing emotional support.</p>
+    <ul>
+      <li>Pain Management</li>
+      <li>Emotional Support</li>
+      <li>Family Counseling</li>
+    </ul>
+  </section>
+
+
+  <footer>
+    <p>&copy; 2025 Healthcare Services. All rights reserved.</p>
+  </footer>
+  <script>
+    (function () {
+      if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+        window.chatbase = (...args) => {
+          if (!window.chatbase.q) window.chatbase.q = [];
+          window.chatbase.q.push(args);
+        };
+
+        window.chatbase = new Proxy(window.chatbase, {
+          get(target, prop) {
+            if (prop === "q") return target.q;
+            return (...args) => target(prop, ...args);
+          }
+        });
+      }
+
+      const onLoad = () => {
+        const script = document.createElement("script");
+        script.src = "https://www.chatbase.co/embed.min.js";
+        script.id = "KBRsDqoRlElfukr3dfXQ-";
+        script.setAttribute("data-domain", "www.chatbase.co"); // Changed from script.domain to setAttribute
+        document.body.appendChild(script);
+      };
+
+      if (document.readyState === "complete") {
+        onLoad();
+      } else {
+        window.addEventListener("load", onLoad);
+      }
+    })();
+  </script>
+
+</body>
+
+</html>
