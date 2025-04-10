@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rehabilitative Care</title>
+ <style>
+   body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  animation: fadeIn 1s ease-in-out, lightGlow 5s infinite alternate;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes lightGlow {
+  0% { background-color: #f9f9f9; box-shadow: 0 0 10px rgba(0, 123, 255, 0.2); }
+  100% { background-color: #ffffff; box-shadow: 0 0 20px rgba(0, 123, 255, 0.4); }
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  animation: slideDown 1s ease-in-out, colorChange 5s infinite alternate;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}
+
+@keyframes colorChange {
+  0% { background-color: #007bff; }
+  50% { background-color: #00bfff; }
+  100% { background-color: #007bff; }
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+nav a:active {
+  animation: clickEffect 0.3s ease-in-out;
+}
+
+@keyframes clickEffect {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.95); }
+  100% { transform: scale(1); }
+}
+
+section {
+  padding: 40px;
+  background-color: white;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 80%;
+  animation: fadeIn 1.5s ease-in-out, sectionGlow 5s infinite alternate;
+  background-color: #D0E8C0;
+}
+
+@keyframes sectionGlow {
+  0% { box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+  100% { box-shadow: 0 8px 16px rgba(0, 123, 255, 0.3); }
+}
+
+h1, h2 {
+  color: #007bff;
+}
+
+ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  animation: colorChange 5s infinite alternate;
+}
+
+footer p {
+  margin: 0;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+  animation: clickEffect 0.3s ease-in-out;
+}
+ </style>
+
+</head>
+
+<body>
+  <header>
+    <h1>Rehabilitative Care</h1>
+    <nav>
+      <ul>
+        <li><a href="#physical">Physical Therapy</a></li>
+        <li><a href="#occupational">Occupational Therapy</a></li>
+        <li><a href="#speech">Speech Therapy</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="physical">
+    <h2>Physical Therapy</h2>
+    <p>Physical therapy helps individuals recover strength, mobility, and function after injury or surgery through
+      personalized exercises.</p>
+  </section>
+
+  <section id="occupational">
+    <h2>Occupational Therapy</h2>
+    <p>Occupational therapy focuses on enabling people to participate in daily activities by improving their physical,
+      cognitive, and motor skills.</p>
+  </section>
+
+  <section id="speech">
+    <h2>Speech Therapy</h2>
+    <p>Speech therapy assists individuals in overcoming speech, language, and swallowing difficulties through targeted
+      exercises and techniques.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rehabilitative Healthcare. All rights reserved.</p>
+  </footer>
+  <script>
+    (function () {
+      if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+        window.chatbase = (...args) => {
+          if (!window.chatbase.q) window.chatbase.q = [];
+          window.chatbase.q.push(args);
+        };
+
+        window.chatbase = new Proxy(window.chatbase, {
+          get(target, prop) {
+            if (prop === "q") return target.q;
+            return (...args) => target(prop, ...args);
+          }
+        });
+      }
+
+      const onLoad = () => {
+        const script = document.createElement("script");
+        script.src = "https://www.chatbase.co/embed.min.js";
+        script.id = "KBRsDqoRlElfukr3dfXQ-";
+        script.setAttribute("data-domain", "www.chatbase.co"); // Changed from script.domain to setAttribute
+        document.body.appendChild(script);
+      };
+
+      if (document.readyState === "complete") {
+        onLoad();
+      } else {
+        window.addEventListener("load", onLoad);
+      }
+    })();
+  </script>
+</body>
+
+</html>
