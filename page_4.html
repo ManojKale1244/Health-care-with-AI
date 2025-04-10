@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curative Care</title>
+ <style>
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    animation: fadeIn 1s ease-in-out, lightGlow 5s infinite alternate;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes lightGlow {
+    0% { background-color: #f9f9f9; box-shadow: 0 0 10px rgba(0, 123, 255, 0.2); }
+    100% { background-color: #ffffff; box-shadow: 0 0 20px rgba(0, 123, 255, 0.4); }
+  }
+  
+  header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    animation: slideDown 1s ease-in-out, colorChange 5s infinite alternate;
+  }
+  
+  @keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+  }
+  
+  @keyframes colorChange {
+    0% { background-color: #007bff; }
+    50% { background-color: #00bfff; }
+    100% { background-color: #007bff; }
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+  }
+  
+  nav a:active {
+    animation: clickEffect 0.3s ease-in-out;
+  }
+  
+  @keyframes clickEffect {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.95); }
+    100% { transform: scale(1); }
+  }
+  
+  section {
+    padding: 40px;
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 80%;
+    animation: fadeIn 1.5s ease-in-out, sectionGlow 5s infinite alternate;
+    background-color: #D0E8C0;
+  }
+  
+  @keyframes sectionGlow {
+    0% { box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    100% { box-shadow: 0 8px 16px rgba(0, 123, 255, 0.3); }
+  }
+  
+  h1, h2 {
+    color: #007bff;
+  }
+  
+  ul {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    animation: colorChange 5s infinite alternate;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+    animation: clickEffect 0.3s ease-in-out;
+  }
+ </style>
+
+</head>
+
+<body>
+  <header>
+    <h1>Curative Care</h1>
+    <nav>
+      <ul>
+        <li><a href="#medication">Medication Management</a></li>
+        <li><a href="#surgery">Surgical Procedures</a></li>
+        <li><a href="#consultation">Specialist Consultations</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="meditation">
+    <b>
+      <h2>Meditation Management</h2>
+      <p>Curative care includes the use of prescribed medications to treat diseases and manage symptoms effectively.
+        <br>
+        Meditation Reconciliation
+    </b>
+    <br>
+    <br>
+    1. Reviewing and comparing a patients medication list to ensure accuracy and avoid duplications, omissions, or
+    interactions.
+    Prescription Management
+    <br>
+    2. Ensuring the correct medications are prescribed, based on the patients medical history and condition.
+    Medication Adherence
+    <br>
+
+    3. Monitoring whether patients take their medications as prescribed, providing reminders, and educating them on the
+    importance of adherence.
+    Medication Monitoring
+    <br>
+    4. Regularly checking for effectiveness, side effects, and interactions through follow-ups and assessments.
+    Patient Education
+    <br>
+    5. Informing patients about the purpose, proper use, potential side effects, and any necessary precautions for their
+    medications.
+    Pharmacovigilance
+    <br>
+    6. Monitoring and reporting any adverse effects or drug interactions to improve medication safety.
+    Use of Technology
+    <br>
+    7. Employing tools like medication management apps, electronic health records (EHRs), and automated reminders for
+    better medication adherence.
+    </p>
+    <video src="meditattion.jpg.mp4" width="350px" controls></video>
+  </section>
+
+  <section id="surgery">
+    <b>
+      <h2>Surgical Procedures</h2>
+    </b>
+    <p> <b> interventions are often necessary to treat certain medical conditions and ensure the recovery of patients.
+        Surgery is an essential medical procedure used to diagnose, treat, or manage various health conditions. Its
+        importance can be highlighted in several ways:</b></p>
+    1. Life-Saving: Surgeries like emergency operations for trauma, organ transplants, or removing tumors can save
+    lives.
+
+    <br>
+    2. Disease Management: Many diseases, including cancer, heart disease, and gastrointestinal issues, often require
+    surgical intervention for effective treatment.
+
+    <br>
+    3. Improved Quality of Life: Corrective surgeries for orthopedic issues, joint replacements, and reconstructive
+    procedures can significantly improve a person's mobility and comfort.
+    <br>
+
+    4. Preventive Care: Some surgeries are performed to prevent the progression of diseases, such as removing
+    precancerous growths or repairing damaged blood vessels.
+    <br>
+
+    5. Diagnosis: Exploratory surgeries and biopsies help in diagnosing illnesses when non-invasive methods are
+    inconclusive.
+    <br>
+
+    6. Restorative and Cosmetic: Plastic and reconstructive surgeries can restore function and appearance after injury,
+    illness, or congenital conditions.
+    </p>
+    <video src="sur.jpg.mp4" controls width="350px"></video>
+  </section>
+
+  <section id="consultation">
+    <h2>Specialist Consultations</h2>
+    <b>
+      <p>Specialist doctors provide targeted treatments and advanced care to manage complex health issues.
+    </b><br><br>
+    1. <b> Cardiology</b> – Heart-related conditions (e.g., hypertension, heart disease).<br>
+    2.<b>Neurology</b> – Brain, spinal cord, and nervous system disorders (e.g., stroke, epilepsy).<br>
+    3.<b>Orthopedics</b> – Bone, joint, and muscle issues (e.g., fractures, arthritis).<br>
+    4.<b>Dermatology</b> – Skin, hair, and nail disorders (e.g., acne, eczema, skin cancer).<br>
+    5.<b>Gastroenterology</b> – Digestive system disorders (e.g., ulcers, IBS, liver diseases).<br>
+    6.<b>Endocrinology</b> – Hormonal and metabolic disorders (e.g., diabetes, thyroid disorders).<br>
+    7.<b>Pulmonology </b>– Lung and respiratory conditions (e.g., asthma, COPD).<br>
+    8.<b>Oncology</b> – Diagnosis and treatment of cancer.<br>
+    9.<b>Ophthalmology</b> – Eye diseases and vision issues.<br>
+    10.<b>Psychiatry</b> – Mental health conditions (e.g., depression, anxiety, schizophrenia).<br>
+    11.<b>Nephrology </b>– Kidney-related disorders.<br>
+    </p>
+    <video src="consuitation.jpg.mp4" controls width="350px" height="250px"></video>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Curative Healthcare. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
+<script>
+  (function () {
+    if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+      window.chatbase = (...args) => {
+        if (!window.chatbase.q) window.chatbase.q = [];
+        window.chatbase.q.push(args);
+      };
+
+      window.chatbase = new Proxy(window.chatbase, {
+        get(target, prop) {
+          if (prop === "q") return target.q;
+          return (...args) => target(prop, ...args);
+        }
+      });
+    }
+
+    const onLoad = () => {
+      const script = document.createElement("script");
+      script.src = "https://www.chatbase.co/embed.min.js";
+      script.id = "KBRsDqoRlElfukr3dfXQ-";
+      script.setAttribute("data-domain", "www.chatbase.co"); // Changed from script.domain to setAttribute
+      document.body.appendChild(script);
+    };
+
+    if (document.readyState === "complete") {
+      onLoad();
+    } else {
+      window.addEventListener("load", onLoad);
+    }
+  })();
+</script>
