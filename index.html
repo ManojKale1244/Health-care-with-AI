@@ -7,75 +7,88 @@
     <title>Document</title>
     <style>
         .neumorphic {
-   
-   border-radius: 20px;
-   box-shadow: 10px 10px 30px #5b677a, -10px -10px 20px ;
- }
- 
- .neumorphic-inset {
-   
-   border-radius: 20px;
-   box-shadow: inset 10px 10px 20px #8798b2, inset -10px -10px 20px #ffffff;
- }
- 
- .neumorphic-card {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   padding: 30px;
-   width: 300px;
-   text-align: center;
-   position: relative;
-   left: 250px;
-   top: 150px;
-   height: 300px;
- }
-body{
- background-image:url(image2.png.jpg);
- background-size: cover;
+            border-radius: 20px;
+            box-shadow: 10px 10px 30px #5b677a, -10px -10px 20px;
+        }
 
-}
+        .neumorphic-inset {
+            border-radius: 20px;
+            box-shadow: inset 10px 10px 20px #8798b2, inset -10px -10px 20px #ffffff;
+        }
 
+        .neumorphic-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            width: 300px;
+            text-align: center;
+            position: relative;
+            left: 250px;
+            top: 150px;
+            height: 300px;
+        }
 
+        body {
+            background-image: url(image2.png.jpg);
+            background-size: cover;
+        }
 
-  
+        /* ✅ Mobile layout adjustment */
+        @media (max-width: 600px) {
+            .neumorphic-card {
+                position: static;
+                width: 90%;
+                margin: 80px auto;
+                height: auto;
+                padding: 20px;
+            }
+
+            input, button {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+                text-align: left;
+            }
+
+            form div {
+                margin-bottom: 15px;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="card">
         <span>Health care</span>
-
     </div>
+
     <div class="neumorphic neumorphic-card">
         <h1>Login</h1>
         <form>
-          <div>
-            <label for="use" style="color:black; text-decoration: solid; width: 20px;" >User Nmae :</label>
-            <input id="use" type="text" placeholder="Enter Name" required>
-          </div> 
-          <br>
-           <div>
-            <label for="pass"> Password :</label>
-            <input id="pass" type="password" placeholder="Enter Password" required>
-           </div>
-           <br>
-           <a href="\page_2.html" text-decoration="non"><button class="neumorphic neumorphic-button" action="\page_2.html"
-                   style="font-size: large;" aria-required="true"> Login </button></a>
-           <br>
-          
+            <div>
+                <label for="use" style="color:black; text-decoration: solid; width: 20px;">User Nmae :</label>
+                <input id="use" type="text" placeholder="Enter Name" required>
+            </div>
+            <br>
+            <div>
+                <label for="pass"> Password :</label>
+                <input id="pass" type="password" placeholder="Enter Password" required>
+            </div>
+            <br>
+            <a href="\page_2.html"><button class="neumorphic neumorphic-button" style="font-size: large;"> Login </button></a>
+            <br>
         </form>
         <br>
-        <a href="\page_1.html" text-decoration="non"><button class="neumorphic neumorphic-button"
-                action="\page_2.html">New User</button></a>
+        <a href="\page_1.html"><button class="neumorphic neumorphic-button">New User</button></a>
         <br>
-      
         <a> Forgot Password</a>
     </div>
-       
-        
-      
 </body>
 
 </html>
